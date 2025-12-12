@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2em;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+/* Parte responsiva */
+.menu-toggle {
+    display: none;
+}
+
+.nav-menutoggle {
+    display: none;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    max-width: 1920px;
+    height: 80px;
+    top: 0;
+    left: 0;
+    background-color: #a1a1a1;
+    position: relative;
+}
+
+.nav-menu {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+/*parte responsiva*/
+@media (max-width: 767px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .iconfechar {
+        display: none;
+    }
+
+    .menu-toggle.active .iconabrir {
+        display: none;
+    }
+
+    .menu-toggle.active .iconfechar {
+        display: block;
+    }
+
+    .menu-toggle {
+    display: block;
+    }
+
+    .nav-menutoggle {
+    display: block;
+    }
+
+    .iconfechar, .iconabrir {
+        width: 24px;
+        height: 24px;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        right: 55px;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+        padding: 06px 8px;
+        background-color:blueviolet;
+        border-radius: 04px;
+        cursor: pointer;
+      
+    }
+
+    .nav-menutoggle {
+        position: absolute;
+        background-color: blueviolet;
+        right: 20px;
+        top: 90px;
+        border-radius: 04px;
+        width: 110px;
+        height: 110px;
+    }
+
+    .nav-itemtoggle{
+        padding: 8px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+   .nav-linktoggle {
+        font-family: "Poppins", sans-serif;
+        font-size: 1em;
+        font-weight: 700;
+        line-height: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+   }
+      .nav-menutoggle{
+        display: none;
+  
+    }
+    .nav-menutoggle.active {
+    display: block;
+    }
+
+    .divider-small {
+    display: block;
+    width: 100%;              
+    height: 2px;              
+    background-color: white;            
+  }
+
+}
