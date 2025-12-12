@@ -1,0 +1,1 @@
+A partir de 767, gostaria que alguém pudesse me ajudar nesse menu tem um problema os icones estão dando tipo um flash na tela quando começo a digitra novamente vscode e não sei como resolver. Se souber como resolver grato pela ajuda.
